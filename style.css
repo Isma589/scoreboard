@@ -1,0 +1,73 @@
+@font-face {
+    font-family: 'Cursed Timer ULiL';
+    src: url('path/to/CursedTimerULiL.ttf') format('truetype');
+}
+
+body {
+    font-family: 'Cursed Timer ULiL', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #383836 10%, #4a4a4a 360%);
+    margin: 0;
+    color: #FFFFFF;
+}
+
+.scoreboard {
+    text-align: center;
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.team h2 {
+    color: #B0C4DE;
+    margin-bottom: 10px;
+}
+
+#teamOneScore,
+#teamTwoScore {
+    font-size: 48px;
+    font-weight: bold;
+    color: #FFFFFF; /* Changed to white */
+    background-color: rgba(0, 0, 0, 0.8); /* Added a semi-transparent black background */
+    padding: 10px; /* Added padding inside the box */
+    border-radius: 5px; /* Rounded corners for the box */
+}
+
+.action-button {
+    display: block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.action-button:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+ .scoreboard {
+        width: 90%;
+        padding: 20px;
+    }
+}
